@@ -1,17 +1,61 @@
+<!-- 文件類型 HTML5 -->
 <!DOCTYPE html>
+<!-- 網頁元素語言 -->
 <html lang="en">
-    <!--  -->
+<!-- 頭部：資訊、設定 -->
+
 <head>
-    <!--  -->
+    <!-- 繁中編碼 -->
     <meta charset="UTF-8">
-    <!--  -->
+    <!-- RWD -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--  -->
-    <title>Document</title>
+    <!-- ./style.css 此檔案根目錄 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- 標題 -->
+    <title>首頁</title>
 </head>
+
 <body>
-    <div class="container">
-        
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" id="image1">
+                <nav id="nav_menu">
+                    <a href="">關於我們</a>
+                    <a href="">聯絡我們</a>
+                    <a href="">菜單介紹</a>
+                    <a href="">購物車</a>
+                    <a href="">會員登入</a>
+                </nav>
+                <p>Welcom Makino Vegetables！</p>
+                <hr>
+                <h1>牧野蔬食歡迎您</h1>
+            </div>
+        </div>
+        <!-- 文章元素 - 有語意的元素：放置有內文、標題、連結 - 提升SEO -->
+        <div class="container" id="news">
+            <div class="row">
+                <div class="col-md-12">
+                    <section>
+                        <div></div>
+                        <div></div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
