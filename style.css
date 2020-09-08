@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 微軟正黑體;
 }
+body{
+
+}
 #nav_menu nav{
     padding:30px;
 }
@@ -25,6 +28,12 @@
     height: 100vh;
     
 }
+#news .new-left{
+    background-image: url(./images/food1.jpg);
+}
+#news .new-right{
+    background-image: url(./images/food2.jpg);
+}
 #image1 p{
     text-align: center;
     margin-top: 250px;
@@ -37,5 +46,12 @@
     margin: 0 auto;
 }
 #news{
-    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    padding: 150px 0;
+    text-align: center;
 }
