@@ -4,9 +4,7 @@
     box-sizing: border-box;
     font-family: 微軟正黑體;
 }
-body{
 
-}
 #nav_menu nav{
     padding:30px;
 }
@@ -45,13 +43,177 @@ body{
     width: 300px;
     margin: 0 auto;
 }
-#news{
+/* 最新消息 */
+#news {
     width: 1200px;
     margin: 0 auto;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    padding: 150px 0;
+    /* 格線間隙 */
+    grid-gap: 50px;  
+    padding: 100px 0;   
     text-align: center;
+}
+
+#news > div {
+    background: #fff;
+}
+
+#news h3 {
+    color: #aaa;
+    padding: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#news hr {
+    width: 350px;
+    margin: 0 auto;
+}
+
+#news h1 {
+    font-size: 32px;
+    font-weight: 100;
+    padding: 20px;
+}
+
+#news p {
+    padding: 30px;
+    text-align: left;
+    line-height: 2;
+    color: #aaa;
+    height: 150px;
+}
+
+#news #news-left {
+    height: 350px;
+    background-image: url(./images/food4.jpg);
+}
+
+#news #news-right {
+    height: 350px;
+    background-image: url(./images/food6.jpg);
+}
+
+/* 按鈕樣式 */
+a.button {
+    text-decoration: none;
+    color: #aaa;
+    border: 1px solid #aaa;
+    padding: 15px 80px;
+    transition: 0.5s;
+}
+
+a.button:hover {
+    color: white;
+    background: #aaa;
+}
+
+/* 盒子區塊 */
+#box {
+    background-image: url(./images/food3.jpg);
+    background-attachment: fixed;
+}
+
+#box h2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    padding: 100px 0;
+    /* 背景濾淨 模糊 */
+    backdrop-filter: blur(5px) opacity(70%);
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+
+/* 關於我與聯絡我 */
+#content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#content h1 {
+    text-align: center;
+    font-weight: 100;
+    color: #333;
+    padding: 30px;
+    letter-spacing: 20px;
+    padding-left: 20px;
+}
+
+#content div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
+#content a {
+    height: 350px;
+    line-height: 350px;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+#content a span{
+    display: block;
+}
+
+#content a span:hover{
+    color: black;
+    translate: 0.5s;
+}
+
+#content #about {
+    background-image: url(./images/food1.jpg);
+}
+
+#content #contact {
+    background-image: url(./images/food2.jpg);
+}
+#map{
+    width: 1200px;
+    margin: 0 auto;
+    height: 300px;
+    display: grid;
+    margin-top: 100px;
+    background-attachment: fixed;
+}
+/* 頁尾 */
+footer {
+    background: #252525;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+}
+
+footer #icon a {
+    padding: 20px;
+    /* 濾鏡 */
+    filter: opacity(100%);
+    transition: 0.5s;
+}
+
+footer #icon a:hover {
+    filter: opacity(10%);
+}
+
+footer h2 {
+    font-weight: 100;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    padding: 50px 0 40px;
+    font-size: 30px;
+}
+
+footer p {
+    padding: 20px;
+    font-size: 10px;
+    color: #aaa;
+    letter-spacing: 3px;
+    padding-left: 3px;
 }
