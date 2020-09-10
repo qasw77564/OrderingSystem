@@ -5,10 +5,10 @@
     font-family: 微軟正黑體;
 }
 
-#nav_menu nav{
+#banner nav,#banner-about{
     padding:30px;
 }
-#nav_menu a{
+#banner a,#banner-about a{
     color: blue;
     text-decoration: none;
     font-size:24px;
@@ -16,7 +16,7 @@
     transition: 0.3s;
 
 }
-#nav_menu a:hover{
+#banner a:hover,#banner-about a:hover{
     color: crimson;
 
 }
@@ -217,3 +217,88 @@ footer p {
     letter-spacing: 3px;
     padding-left: 3px;
 }
+
+/* 關於我分頁 */
+/* 橫幅 */
+#banner-about {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 40vh;
+    background-image: url(./images/about.jpg);
+    /* 背景-尺寸：填滿 - 50%、500px */
+    background-size: cover;
+    color: white;
+    /* 背景-附著：固定 */
+    background-attachment: fixed;
+}
+
+#banner-about nav {
+    backdrop-filter: opacity(90%);
+}
+
+#banner-about h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 100;
+    letter-spacing: 20px;
+    padding-left: 20px;
+    line-height: 20vh;
+    backdrop-filter: opacity(90%);
+    height: 30vh;
+}
+/* 關於我內文 */
+#about-content {
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px 80px;
+    margin-top: 100px;
+}
+
+#about-content h3 {
+    text-align: center;
+    padding: 20px;
+    color: #ddd;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#about-content hr {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#about-content h1 {
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+
+#about-content #about-1 {
+    height: 350px;
+    background-image: url(./images/about_2.jpg);
+    background-size: cover;
+}
+
+#about-content #about-2 {
+    height: 350px;
+    background-image: url(./images/about_3.jpg);
+    background-size: cover;
+}
+
+#about-content #about-3 {
+    height: 350px;
+    background-image: url(./images/about_4.jpg);
+    background-size: cover;
+}
+
+#about-content p {
+    padding: 30px 0;
+    line-height: 2;
+    color: #888;
+} 
